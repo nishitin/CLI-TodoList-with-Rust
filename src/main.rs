@@ -20,6 +20,15 @@ impl fmt::Display for Priority {
     }
 }
 
+struct Task {
+    id: usize,
+    title: String,
+    completed: bool,
+    priority: Priority,
+    due_date: Option<DateTime<Local>>,
+    created_at: DateTime<Local>,
+}
+
 fn main() {
     println!("Hello, world!");
 }
