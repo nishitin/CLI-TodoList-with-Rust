@@ -1,6 +1,10 @@
 [package]
 name = "todo_app"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+chrono = "0.4"       # 日付と時刻の処理
+serde = { version = "1.0", features = ["derive"] } # シリアライズ・デシリアライズ
+serde_json = "1.0"   # JSONの処理
+clap = "3.0"         # コマンドライン引数の処理
